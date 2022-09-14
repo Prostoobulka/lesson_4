@@ -1,0 +1,158 @@
+/* Шрифт Roboto из Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* 
+	Шрифт Larsseit из макета (Figma) ThriveTalk 
+	Поддерживает Латиницу
+*/
+
+
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/larsseit.woff2") format("woff2"),
+	url("../fonts/larsseit.woff") format("woff");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit-Medium.woff2") format("woff2"),
+	url("../fonts/Larsseit-Medium.woff") format("woff");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/larsseit-bold.woff2") format("woff2"),
+	url("../fonts/larsseit-bold.woff") format("woff");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+}
+
+/* 
+	Шрифт Latto из макета (Figma) OnlineCurse
+	Подерживает Латиницу и Кирилицу
+ */
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Regular.woff2") format("woff2"),
+	url("../fonts/Lato-Regular.woff") format("woff");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Bold.woff2") format("woff2"),
+	url("../fonts/Lato-Bold.woff") format("woff");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Black.woff2") format("woff2"),
+	url("../fonts/Lato-Black.woff") format("woff");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 900;
+}
+
+/* ----------------------------------------------- */
+body{
+	background: #e3e3e3;
+}
+/* -----------------------Header----------------------- */
+.header__inner {
+	font-family:"Roboto";
+	font-weight: 400;
+}
+.hero *{
+	color: forestgreen;
+}
+.burger,
+.hero
+{
+	font-weight: 500;
+}
+.hero .link-anchor.color{
+	color: blueviolet
+}
+.hero .link-anchor.color-other{
+	color: brown;
+}
+.navigation + .button {
+	color: orange;
+	font-weight: 700;
+}
+.menu-item ~ li a{
+	color: blue;
+}
+/* ----------------------------------------------- */
+/* Працюватимуть усі обєкти з класом menu-item всередині обєкта з класом menu-list
+	Не буде перебиватися тому що діє 2 правило (Конкретизує, уточнює) на цей селектор каскадності 
+	.menu-item ~ li a{color: blue;}
+*/
+.menu-list > .menu-item{
+	color: aqua;
+}
+/* ----------------------------------------------- */
+
+/* -----------------------Main----------------------- */
+
+.content {
+	font-family: "Lato";
+	font-weight: 400;
+}
+.entry-piece-text{
+	font-weight: 700;
+}
+.entry-piece-text > p{
+	color: cornflowerblue;
+}
+.who-is-who,
+.what-knowledge {
+	font-weight: 900;
+}
+.what-knowalodge-img ~ ul li{
+	color: darkkhaki;
+}
+.who-is-who-img ~ h2 {
+	color: fuchsia;
+}
+.what-knowledge {
+}
+.who-is-who .who-is-who-list li {
+	color: salmon
+}
+.what-knowalodge-img + h2{
+	color: firebrick;
+}
+
+.search-work {
+	font-weight: 700;
+}
+.search-work.color > p,
+.search-work.color >h3 {
+	color: rgb(0, 136, 255);
+}
+
+.tips > p{
+	color: cadetblue;
+}
+.tips-img ~ h3 {
+	color: hotpink;
+}
+.footer__inner{
+	font-family: "Larsseit";
+	font-weight: 700;
+}
+.footer__inner > * {
+	color: darkolivegreen;
+}
+
